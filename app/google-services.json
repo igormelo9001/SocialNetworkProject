@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "850729705371",
+    "firebase_url": "https://socialnetwork-fc33f.firebaseio.com",
+    "project_id": "socialnetwork-fc33f",
+    "storage_bucket": "socialnetwork-fc33f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850729705371:android:e62c0ffb551c8e20",
+        "android_client_info": {
+          "package_name": "com.igor.socialnetwork.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "850729705371-e6d93ctgdvk9jis77pf3o7hk1prfn9b9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCatY8tFycPYMiw8IpiOsG5i4hxp5njGIY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "850729705371-e6d93ctgdvk9jis77pf3o7hk1prfn9b9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
