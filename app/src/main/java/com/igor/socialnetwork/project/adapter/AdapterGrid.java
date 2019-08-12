@@ -34,6 +34,7 @@ public class AdapterGrid extends ArrayAdapter<String> {
     public class ViewHolder {
         ImageView imagem;
         ProgressBar progressBar;
+
     }
 
     @Override

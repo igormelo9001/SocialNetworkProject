@@ -4,6 +4,7 @@ package com.igor.socialnetwork.project.fragment;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -17,17 +18,32 @@ import android.widget.GridView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.StorageReference;
 import com.igor.socialnetwork.project.R;
 import com.igor.socialnetwork.project.activity.EditarPerfilActivity;
+import com.igor.socialnetwork.project.activity.PerfilAmigoActivity;
+import com.igor.socialnetwork.project.adapter.AdapterGrid;
 import com.igor.socialnetwork.project.helper.ConfiguracaoFirebase;
 import com.igor.socialnetwork.project.helper.UsuarioFirebase;
+import com.igor.socialnetwork.project.model.Postagem;
+import com.igor.socialnetwork.project.model.Usuario;
+import com.nostra13.universalimageloader.cache.disc.naming.HashCodeFileNameGenerator;
+import com.nostra13.universalimageloader.cache.memory.impl.LruMemoryCache;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -44,6 +60,14 @@ public class PerfilFragment extends Fragment {
     private Button buttonAcaoPerfil;
     private StorageReference storageRef;
     private String identificadoUsuario;
+    private Usuario usuarioLogado;
+    private DatabaseReference usuarioAmigoRef;
+    private DatabaseReference usuariosRef;
+    private DatabaseReference usuarioLogadoRef;
+    private ValueEventListener valueEventListenerPerfil;
+    private DatabaseReference firebaseRef;
+    private DatabaseReference postagensUsuariosRef;
+    private AdapterGrid adapterGrid;
 
     public PerfilFragment() {
         // Required empty public constructor
@@ -56,14 +80,24 @@ public class PerfilFragment extends Fragment {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_perfil, container, false);
 
+        usuarioLogado = UsuarioFirebase.getDadosUsuarioLogado();
+        firebaseRef = ConfiguracaoFirebase.getFirebase();
+        usuariosRef = firebaseRef.child("usuarios");
 
-        gridViewPerfil = view.findViewById(R.id.gridviewPerfil);
-        progressBar = view.findViewById(R.id.progressBarPerfil);
-        imagePerfil = view.findViewById(R.id.imagePerfil);
-        textPublicacoes = view.findViewById(R.id.textPublicacoes);
-        textSeguidores = view.findViewById(R.id.textSeguidores);
-        textSeguindo = view.findViewById(R.id.textSeguindo);
-        buttonAcaoPerfil = view.findViewById(R.id.buttonAcaoPerfil);
+
+        postagensUsuariosRef = ConfiguracaoFirebase.getFirebase()
+                .child("postagens")
+                .child(usuarioLogado.getId());
+
+        initViews(view);
+
+        String caminhoFoto = usuarioLogado.getCaminhoFoto();
+        if (caminhoFoto != null){
+            Uri uri = Uri.parse( caminhoFoto );
+            Glide.with(getActivity())
+                    .load(uri)
+                    .into(imagePerfil);
+        }
 
         identificadoUsuario = UsuarioFirebase.getIdentificadorUsuario();
 
@@ -90,6 +124,7 @@ public class PerfilFragment extends Fragment {
             });
         } catch (IOException e ) {}
 
+        buttonAcaoPerfil.setText("Editar Perfil");
         buttonAcaoPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -97,9 +132,108 @@ public class PerfilFragment extends Fragment {
             }
         });
 
+        inicializarImageLoader();
+
+        carregarFotosPostagem();
+
         return view;
     }
 
+    private void initViews(View view) {
+        imagePerfil = view.findViewById(R.id.imagePerfil);
+        buttonAcaoPerfil = view.findViewById(R.id.buttonAcaoPerfil);
+        buttonAcaoPerfil.setText("Carregando");
+        textPublicacoes = view.findViewById(R.id.textPublicacoes);
+        textSeguidores = view.findViewById(R.id.textSeguidores);
+        textSeguindo = view.findViewById(R.id.textSeguindo);
+        gridViewPerfil = view.findViewById(R.id.gridviewPerfil);
+    }
 
+    public void carregarFotosPostagem(){
 
+        postagensUsuariosRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+//                int tamanhoGrid = getResources().getDisplayMetrics().widthPixels;
+//                int tamanhoImagem = tamanhoGrid / 3;
+//                gridViewPerfil.setColumnWidth(tamanhoImagem);
+
+                List<String> urlFotos = new ArrayList<>();
+                for( DataSnapshot ds: dataSnapshot.getChildren()){
+                    Postagem postagem = ds.getValue(Postagem.class);
+                    //Log.i("postagem", "url " + postagem.getCaminhoFoto());
+                    urlFotos.add(postagem.getCaminhoFoto());
+                }
+                int qtdPostagem = urlFotos.size();
+                textPublicacoes.setText(String.valueOf(qtdPostagem));
+
+                adapterGrid = new AdapterGrid(getContext(), R.layout.grid_postagem, urlFotos);
+                gridViewPerfil.setAdapter(  adapterGrid );
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+    }
+
+    public void inicializarImageLoader(){
+
+        ImageLoaderConfiguration config = new ImageLoaderConfiguration
+                .Builder(getActivity())
+                .memoryCache(new LruMemoryCache(2 * 1024 * 1024))
+                .memoryCacheSize(2 * 1024 * 1024)
+                .diskCacheSize(50 * 1024 * 1024)
+                .diskCacheFileCount(100)
+                .diskCacheFileNameGenerator(new HashCodeFileNameGenerator())
+                .build();
+
+        ImageLoader.getInstance().init(config);
+
+    }
+
+    private void recuperarDadosUsuarioLogado(){
+
+        usuarioLogadoRef = usuariosRef.child(usuarioLogado.getId());
+        valueEventListenerPerfil = usuarioLogadoRef.addValueEventListener(
+                new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                        Usuario usuario = dataSnapshot.getValue(Usuario.class);
+                        //String postagens = String.valueOf(usuario.getPostagens());
+                        String seguindo = String.valueOf(usuario.getSeguindo());
+                        String seguidores = String.valueOf(usuario.getSeguidores());
+
+                        //textPublicacoes.setText(postagens);
+                        textSeguindo.setText(seguindo);
+                        textSeguidores.setText(seguidores);
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                }
+        );
+
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        usuarioLogadoRef.removeEventListener( valueEventListenerPerfil);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        recuperarDadosUsuarioLogado();
+    }
 }
