@@ -162,6 +162,10 @@ public class PerfilAmigoActivity extends AppCompatActivity {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
+                    int tamanhoGrid = getResources().getDisplayMetrics().widthPixels;
+                    int tamanhoImagem = tamanhoGrid / 3;
+                    gridViewPerfil.setColumnWidth(tamanhoImagem);
+
                     List<String> urlFotos = new ArrayList<>();
                     for( DataSnapshot ds: dataSnapshot.getChildren()){
                         Postagem postagem = ds.getValue(Postagem.class);

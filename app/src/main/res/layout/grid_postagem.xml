@@ -8,7 +8,7 @@
 
     <com.igor.socialnetwork.project.helper.SquareImageView
         android:id="@+id/imageGridPefil"
-        android:layout_width="200dp"
+        android:layout_width="0dp"
         android:layout_height="200dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
