@@ -11,10 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85cf97bc-e2f7-43a6-9d8a-ac900a5016b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/res/layout/carregamento.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/FiltroActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/FiltroActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_filtro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_filtro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/PerfilAmigoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/PerfilAmigoActivity.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/PerfilAmigoActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="83" column="55" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
+            <state relative-caret-position="-92">
+              <caret line="279" column="55" selection-start-line="279" selection-start-column="55" selection-end-line="279" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5188#5682#0" expanded="true" />
@@ -49,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/VisualizarPostagemActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="46" column="64" lean-forward="true" selection-start-line="46" selection-start-column="64" selection-end-line="46" selection-end-column="64" />
+              <caret line="46" column="64" selection-start-line="46" selection-start-column="64" selection-end-line="46" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2480#2850#0" expanded="true" />
@@ -59,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/FiltroActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="218" column="8" selection-start-line="218" selection-start-column="8" selection-end-line="218" selection-end-column="8" />
+            <state relative-caret-position="151">
+              <caret line="248" column="75" selection-start-line="248" selection-start-column="75" selection-end-line="248" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -89,7 +87,7 @@
           <provider editor-type-id="android-manifest" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -167,13 +165,13 @@
         <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/fragment/PerfilFragment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/PerfilAmigoActivity.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/toolbar.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_visualizar_postagem.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/VisualizarPostagemActivity.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_filtro.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/carregamento.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/FiltroActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/PerfilAmigoActivity.java" />
       </list>
     </option>
   </component>
@@ -192,51 +190,6 @@
       <pane id="AndroidView">
         <subPane>
           <expand>
-            <path>
-              <item name="SocialNetworkProject" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="SocialNetworkProject" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
-            </path>
-            <path>
-              <item name="SocialNetworkProject" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="SocialNetworkProject" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="project" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SocialNetworkProject" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="project" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="activity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SocialNetworkProject" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="project" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SocialNetworkProject" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="SocialNetworkProject" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
             <path>
               <item name="SocialNetworkProject" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
@@ -355,7 +308,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23676248" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18532526" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -364,7 +317,7 @@
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.7037643" />
-      <window_info anchor="bottom" id="Logcat" order="1" visible="true" weight="0.31751227" />
+      <window_info anchor="bottom" id="Logcat" order="1" visible="true" weight="0.4304419" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.43698853" />
       <window_info anchor="bottom" id="Terminal" order="4" />
@@ -542,18 +495,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/PerfilAmigoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="83" column="55" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5188#5682#0" expanded="true" />
-            <element signature="e#5681#5682#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_visualizar_postagem.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -574,14 +515,14 @@
       <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/VisualizarPostagemActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="46" column="64" lean-forward="true" selection-start-line="46" selection-start-column="64" selection-end-line="46" selection-end-column="64" />
+          <caret line="46" column="64" selection-start-line="46" selection-start-column="64" selection-end-line="46" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2480#2850#0" expanded="true" />
@@ -604,8 +545,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/FiltroActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="218" column="8" selection-start-line="218" selection-start-column="8" selection-end-line="218" selection-end-column="8" />
+        <state relative-caret-position="151">
+          <caret line="248" column="75" selection-start-line="248" selection-start-column="75" selection-end-line="248" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/PerfilAmigoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <caret line="279" column="55" selection-start-line="279" selection-start-column="55" selection-end-line="279" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5188#5682#0" expanded="true" />
+            <element signature="e#5681#5682#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
