@@ -1,6 +1,7 @@
 package com.igor.socialnetwork.project.activity;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -63,8 +64,7 @@ public class FiltroActivity extends AppCompatActivity {
     private DatabaseReference usuariosRef;
     private DatabaseReference usuarioLogadoRef;
     private Usuario usuarioLogado;
-    private ProgressBar progressBar;
-    private Boolean estaCarregando;
+    private AlertDialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,7 +79,6 @@ public class FiltroActivity extends AppCompatActivity {
         imageFotoEscolhida = findViewById(R.id.imageFotoEscolhida);
         recyclerFiltros = findViewById(R.id.recylerFiltros);
         textDescricaoFiltro = findViewById(R.id.textDescricaoFiltro);
-        progressBar = findViewById(R.id.progressFiltro);
 
         recuperarDadosUsuarioLogado();
 
@@ -140,28 +139,27 @@ public class FiltroActivity extends AppCompatActivity {
 
     }
 
-    private void carregando(boolean estado){
+    private void abrirDialogCarregamento(String titulo){
 
-        if(estado){
-            estaCarregando = true;
-            progressBar.setVisibility(View.VISIBLE);
-        }else {
-            estaCarregando = false;
-            progressBar.setVisibility(View.GONE);
-        }
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert.setTitle( titulo );
+        alert.setCancelable( false );
+        alert.setView(R.layout.carregamento);
 
+        dialog = alert.create();
+        dialog.show();
     }
 
     private void recuperarDadosUsuarioLogado(){
 
-        carregando(true);
+        abrirDialogCarregamento("Carregando dados, aguarde");
         usuarioLogadoRef = usuariosRef.child(idUsuarioLogado);
         usuarioLogadoRef.addListenerForSingleValueEvent(
                 new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         usuarioLogado = dataSnapshot.getValue(Usuario.class);
-                        carregando(false);
+                        dialog.cancel();
                     }
 
                     @Override
@@ -218,9 +216,7 @@ public class FiltroActivity extends AppCompatActivity {
 
     private void publicarPostagem() {
 
-        if(estaCarregando){
-            Toast.makeText(getApplicationContext(), "Carregando dados, aguarde", Toast.LENGTH_SHORT ).show();
-        }else {
+            abrirDialogCarregamento("Salvando postagem");
             final Postagem postagem = new Postagem();
             postagem.setIdUsuario(idUsuarioLogado);
             postagem.setDescricao( textDescricaoFiltro.getText().toString());
@@ -255,12 +251,12 @@ public class FiltroActivity extends AppCompatActivity {
                         usuarioLogado.atualizarQtdPostagem();
 
                         Toast.makeText(FiltroActivity.this, "Sucesso ao salvar postagem", Toast.LENGTH_SHORT).show();
+                        dialog.cancel();
                         finish();
                     }
                 }
             });
 
-        }
 
     }
 
