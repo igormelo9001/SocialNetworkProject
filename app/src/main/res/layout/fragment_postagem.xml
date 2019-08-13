@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    tools:context="com.igor.fodase.project.fragment.PostagemFragment">
+    tools:context="com.igor.socialnetwork.project.fragment.PostagemFragment">
 
     <Button
         android:id="@+id/buttonAbrirGaleria"

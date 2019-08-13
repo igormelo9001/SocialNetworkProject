@@ -21,7 +21,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activity.VisualizarPostagemActivity"></activity>
+        <activity android:name=".activity.VisualizarPostagemActivity"/>
         <activity android:name=".activity.FiltroActivity" />
         <activity android:name=".activity.PerfilAmigoActivity" />
         <activity

@@ -169,7 +169,7 @@ public class FiltroActivity extends AppCompatActivity {
                         seguidoresRef.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-
+                                seguidoresSnapshot = dataSnapshot;
                                 dialog.cancel();
                             }
 
