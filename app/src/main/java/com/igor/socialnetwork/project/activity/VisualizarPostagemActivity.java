@@ -6,11 +6,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toolbar;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -19,14 +16,11 @@ import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.StorageReference;
 import com.igor.socialnetwork.project.R;
 import com.igor.socialnetwork.project.helper.ConfiguracaoFirebase;
-import com.igor.socialnetwork.project.helper.UsuarioFirebase;
 import com.igor.socialnetwork.project.model.Postagem;
 import com.igor.socialnetwork.project.model.Usuario;
 
-
 import java.io.File;
 import java.io.IOException;
-import java.util.Objects;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
