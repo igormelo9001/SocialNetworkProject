@@ -4,11 +4,13 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
@@ -56,6 +58,7 @@ public class PerfilAmigoActivity extends AppCompatActivity {
     private DatabaseReference postagensUsuariosRef;
     private ValueEventListener valueEventListenerPerfilAmigo;
     private String idUsuarioLogado;
+    private List<Postagem> postagens;
     private GridView gridViewPerfil;
     private AdapterGrid adapterGrid;
 
@@ -127,6 +130,18 @@ public class PerfilAmigoActivity extends AppCompatActivity {
         inicializarImageLoader();
         carregarFotosPostagem();
 
+        gridViewPerfil.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                Postagem postagem = postagens.get(i);
+                Intent intent = new Intent(PerfilAmigoActivity.this, VisualizarPostagemActivity.class);
+                intent.putExtra("postagem", postagem);
+                intent.putExtra("usuario", usuarioSelecionado);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void initViews() {
@@ -158,6 +173,7 @@ public class PerfilAmigoActivity extends AppCompatActivity {
 
     public void carregarFotosPostagem(){
 
+            postagens = new ArrayList<>();
             postagensUsuariosRef.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -169,8 +185,9 @@ public class PerfilAmigoActivity extends AppCompatActivity {
                     List<String> urlFotos = new ArrayList<>();
                     for( DataSnapshot ds: dataSnapshot.getChildren()){
                         Postagem postagem = ds.getValue(Postagem.class);
-                        //Log.i("postagem", "url " + postagem.getCaminhoFoto());
+                        postagens.add(postagem);
                         urlFotos.add(postagem.getCaminhoFoto());
+                        //Log.i("postagem", "url " + postagem.getCaminhoFoto());
                     }
 
                     adapterGrid = new AdapterGrid(getApplicationContext(), R.layout.grid_postagem, urlFotos);

@@ -3,8 +3,10 @@ package com.igor.socialnetwork.project.model;
 import com.google.firebase.database.DatabaseReference;
 import com.igor.socialnetwork.project.helper.ConfiguracaoFirebase;
 
+import java.io.Serializable;
 
-public class Postagem {
+
+public class Postagem implements Serializable {
 
     private String id;
     private String idUsuario;

@@ -9,5 +9,5 @@
     android:elevation="5dp"
     android:minHeight="?attr/actionBarSize"
     android:theme="?attr/actionBarTheme"
-    app:title="Social Network"></androidx.appcompat.widget.Toolbar>
+    app:title="Social Network" />
 
