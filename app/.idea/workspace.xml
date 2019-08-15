@@ -12,17 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85cf97bc-e2f7-43a6-9d8a-ac900a5016b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/ComentariosActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/background_caixa_comentario.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_send_black_24dp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_comentarios.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/model/Comentario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/adapter/AdapterFeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/adapter/AdapterFeed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/ComentariosActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/ComentariosActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_comentarios.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_comentarios.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,40 +42,61 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/EditarPerfilActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="67" column="62" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="67" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/drawable/background_caixa_comentario.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/drawable/ic_send_black_24dp.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/ComentariosActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+            <state relative-caret-position="101">
+              <caret line="55" column="97" selection-start-line="55" selection-start-column="97" selection-end-line="55" selection-end-column="97" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/adapter/AdapterFeed.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="70" column="43" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/model/Comentario.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#300#301#0" expanded="true" />
+                <element signature="e#335#336#0" expanded="true" />
+                <element signature="e#391#392#0" expanded="true" />
+                <element signature="e#439#440#0" expanded="true" />
+                <element signature="e#476#477#0" expanded="true" />
+                <element signature="e#509#510#0" expanded="true" />
+                <element signature="e#561#562#0" expanded="true" />
+                <element signature="e#605#606#0" expanded="true" />
+                <element signature="e#641#642#0" expanded="true" />
+                <element signature="e#673#674#0" expanded="true" />
+                <element signature="e#723#724#0" expanded="true" />
+                <element signature="e#765#766#0" expanded="true" />
+                <element signature="e#803#804#0" expanded="true" />
+                <element signature="e#837#838#0" expanded="true" />
+                <element signature="e#891#892#0" expanded="true" />
+                <element signature="e#937#938#0" expanded="true" />
+                <element signature="e#975#976#0" expanded="true" />
+                <element signature="e#1009#1010#0" expanded="true" />
+                <element signature="e#1063#1064#0" expanded="true" />
+                <element signature="e#1109#1110#0" expanded="true" />
+                <element signature="e#1146#1147#0" expanded="true" />
+                <element signature="e#1179#1180#0" expanded="true" />
+                <element signature="e#1231#1232#0" expanded="true" />
+                <element signature="e#1275#1276#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,8 +160,8 @@
         <option value="valueResourceFile" />
         <option value="layoutResourceFile_vertical" />
         <option value="layoutResourceFile" />
-        <option value="Class" />
         <option value="resourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -208,6 +222,7 @@
         <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
         <option value="$PROJECT_DIR$/src/main/res/drawable/background_caixa_comentario.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_comentarios.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/model/Comentario.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/ComentariosActivity.java" />
       </list>
     </option>
@@ -251,6 +266,20 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="project" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="activity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SocialNetworkProject" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="project" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="adapter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SocialNetworkProject" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="project" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SocialNetworkProject" type="1abcf292:AndroidViewProjectNode" />
@@ -385,7 +414,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19591528" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19591528" />
       <window_info id="Structure" order="1" side_tool="true" />
       <window_info id="Captures" order="2" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -401,7 +430,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5015129" side_tool="true" weight="0.17512275" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49848714" visible="true" weight="0.14238952" />
+      <window_info active="true" anchor="bottom" id="Build" order="7" sideWeight="0.49848714" visible="true" weight="0.44680852" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -424,10 +453,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_login.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_cadastro.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
@@ -687,16 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/adapter/AdapterFeed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="70" column="60" selection-start-line="70" selection-start-column="60" selection-end-line="70" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_editar_perfil.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
@@ -779,6 +794,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/EditarPerfilActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="67" column="62" selection-start-line="63" selection-start-column="8" selection-end-line="67" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_comentarios.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
@@ -787,17 +809,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/EditarPerfilActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/adapter/AdapterFeed.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="67" column="62" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="67" selection-end-column="62" />
+        <state relative-caret-position="213">
+          <caret line="70" column="43" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/model/Comentario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#765#766#0" expanded="true" />
+            <element signature="e#803#804#0" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="true" />
+            <element signature="e#1109#1110#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1179#1180#0" expanded="true" />
+            <element signature="e#1231#1232#0" expanded="true" />
+            <element signature="e#1275#1276#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/ComentariosActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        <state relative-caret-position="101">
+          <caret line="55" column="97" selection-start-line="55" selection-start-column="97" selection-end-line="55" selection-end-column="97" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
