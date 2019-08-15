@@ -66,11 +66,17 @@ public class Usuario implements Serializable {
     public void atualizar(){
 
         DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebase();
-        DatabaseReference usuarioRef = firebaseRef.child("usuarios")
-                .child(getId());
+//        DatabaseReference usuarioRef = firebaseRef.child("usuarios")
+//                .child(getId());
+//
+//        Map<String, Object> valoresUsuario = converterParaMap();
+//        usuarioRef.updateChildren(valoresUsuario);
 
-        Map<String, Object> valoresUsuario = converterParaMap();
-        usuarioRef.updateChildren(valoresUsuario);
+        Map objeto = new HashMap();
+        objeto.put("/usuarios/" + getId() + "/nome", getNome());
+        objeto.put("/usuarios/" + getId() + "/caminhoFoto", getCaminhoFoto());
+
+        firebaseRef.updateChildren(objeto);
 
     }
 

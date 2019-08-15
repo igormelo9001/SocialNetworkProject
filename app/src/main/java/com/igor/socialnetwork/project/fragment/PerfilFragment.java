@@ -91,39 +91,6 @@ public class PerfilFragment extends Fragment {
 
         initViews(view);
 
-        String caminhoFoto = usuarioLogado.getCaminhoFoto();
-        if (caminhoFoto != null){
-            Uri uri = Uri.parse( caminhoFoto );
-            Glide.with(getActivity())
-                    .load(uri)
-                    .into(imagePerfil);
-        }
-
-        identificadoUsuario = UsuarioFirebase.getIdentificadorUsuario();
-
-        storageRef = ConfiguracaoFirebase.getFirebaseStorage();
-
-        StorageReference imagemRef = storageRef
-                .child("imagens")
-                .child("perfil")
-                .child(identificadoUsuario + ".jpeg");
-
-        try {
-            final File localFile = File.createTempFile("images", "jpg");
-            imagemRef.getFile(localFile).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
-                @Override
-                public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
-                    Bitmap bitmap = BitmapFactory.decodeFile(localFile.getAbsolutePath());
-                    imagePerfil.setImageBitmap(bitmap);
-
-                }
-            }).addOnFailureListener(new OnFailureListener() {
-                @Override
-                public void onFailure(@NonNull Exception exception) {
-                }
-            });
-        } catch (IOException e ) {}
-
         buttonAcaoPerfil.setText("Editar Perfil");
         buttonAcaoPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -165,8 +132,7 @@ public class PerfilFragment extends Fragment {
                     //Log.i("postagem", "url " + postagem.getCaminhoFoto());
                     urlFotos.add(postagem.getCaminhoFoto());
                 }
-                int qtdPostagem = urlFotos.size();
-                textPublicacoes.setText(String.valueOf(qtdPostagem));
+
 
                 adapterGrid = new AdapterGrid(getContext(), R.layout.grid_postagem, urlFotos);
                 gridViewPerfil.setAdapter(  adapterGrid );
@@ -205,11 +171,11 @@ public class PerfilFragment extends Fragment {
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
                         Usuario usuario = dataSnapshot.getValue(Usuario.class);
-                        //String postagens = String.valueOf(usuario.getPostagens());
+                        String postagens = String.valueOf(usuario.getPostagens());
                         String seguindo = String.valueOf(usuario.getSeguindo());
                         String seguidores = String.valueOf(usuario.getSeguidores());
 
-                        //textPublicacoes.setText(postagens);
+                        textPublicacoes.setText(postagens);
                         textSeguindo.setText(seguindo);
                         textSeguidores.setText(seguidores);
 
@@ -230,10 +196,50 @@ public class PerfilFragment extends Fragment {
         usuarioLogadoRef.removeEventListener( valueEventListenerPerfil);
     }
 
+    private void recuperarFotoUsuario(){
+        usuarioLogado = UsuarioFirebase.getDadosUsuarioLogado();
+
+        identificadoUsuario = UsuarioFirebase.getIdentificadorUsuario();
+
+        storageRef = ConfiguracaoFirebase.getFirebaseStorage();
+
+        StorageReference imagemRef = storageRef
+                .child("imagens")
+                .child("perfil")
+                .child(identificadoUsuario + ".jpeg");
+
+        try {
+            final File localFile = File.createTempFile("images", "jpg");
+            imagemRef.getFile(localFile).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                @Override
+                public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                    Bitmap bitmap = BitmapFactory.decodeFile(localFile.getAbsolutePath());
+                    imagePerfil.setImageBitmap(bitmap);
+
+                }
+            }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception exception) {
+                }
+            });
+        } catch (IOException e ) {}
+
+        String caminhoFoto = usuarioLogado.getCaminhoFoto();
+        if (caminhoFoto != null){
+            Uri uri = Uri.parse( caminhoFoto );
+            Glide.with(getActivity())
+                    .load(uri)
+                    .into(imagePerfil);
+        }
+
+    }
+
     @Override
     public void onStart() {
         super.onStart();
 
         recuperarDadosUsuarioLogado();
+
+        recuperarFotoUsuario();
     }
 }
