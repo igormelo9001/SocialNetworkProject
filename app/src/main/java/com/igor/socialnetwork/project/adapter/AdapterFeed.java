@@ -1,6 +1,7 @@
 package com.igor.socialnetwork.project.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -18,6 +19,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 import com.igor.socialnetwork.project.R;
+import com.igor.socialnetwork.project.activity.ComentariosActivity;
 import com.igor.socialnetwork.project.helper.ConfiguracaoFirebase;
 import com.igor.socialnetwork.project.helper.UsuarioFirebase;
 import com.igor.socialnetwork.project.model.Feed;
@@ -49,7 +51,7 @@ public class AdapterFeed extends RecyclerView.Adapter<AdapterFeed.MyViewHolder> 
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final MyViewHolder holder, final int position) {
 
         final Feed feed = listaFeed.get(position);
         final Usuario usuarioLogado = UsuarioFirebase.getDadosUsuarioLogado();
@@ -61,6 +63,15 @@ public class AdapterFeed extends RecyclerView.Adapter<AdapterFeed.MyViewHolder> 
         Glide.with(context).load(uriFotoUsuario).into(holder.fotoPerfil);
         Glide.with(context).load(uriFotoPostagem).into(holder.fotoPostagem);
         holder.nome.setText(feed.getNomeUsuario());
+
+        holder.visualizarComentario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, ComentariosActivity.class);
+                intent.putExtra("idPostagem", feed.getId());
+                context.startActivity(intent);
+            }
+        });
 
         DatabaseReference curtidasRef = ConfiguracaoFirebase.getFirebase()
                 .child("postagens-curtidas")
