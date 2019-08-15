@@ -2,6 +2,7 @@ package com.igor.socialnetwork.project.adapter;
 
 import android.content.Context;
 import android.net.Uri;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,9 +13,18 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.ValueEventListener;
 import com.igor.socialnetwork.project.R;
+import com.igor.socialnetwork.project.helper.ConfiguracaoFirebase;
+import com.igor.socialnetwork.project.helper.UsuarioFirebase;
 import com.igor.socialnetwork.project.model.Feed;
+import com.igor.socialnetwork.project.model.PostagemCurtida;
+import com.igor.socialnetwork.project.model.Usuario;
 import com.like.LikeButton;
+import com.like.OnLikeListener;
 
 import java.util.List;
 
@@ -39,9 +49,10 @@ public class AdapterFeed extends RecyclerView.Adapter<AdapterFeed.MyViewHolder> 
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final MyViewHolder holder, int position) {
 
-        Feed feed = listaFeed.get(position);
+        final Feed feed = listaFeed.get(position);
+        final Usuario usuarioLogado = UsuarioFirebase.getDadosUsuarioLogado();
 
         Uri uriFotoUsuario = Uri.parse(feed.getFotoUsuario());
         Uri uriFotoPostagem = Uri.parse(feed.getFotoPostagem());
@@ -49,8 +60,55 @@ public class AdapterFeed extends RecyclerView.Adapter<AdapterFeed.MyViewHolder> 
         holder.descricao.setText(feed.getDescricao());
         Glide.with(context).load(uriFotoUsuario).into(holder.fotoPerfil);
         Glide.with(context).load(uriFotoPostagem).into(holder.fotoPostagem);
-
         holder.nome.setText(feed.getNomeUsuario());
+
+        DatabaseReference curtidasRef = ConfiguracaoFirebase.getFirebase()
+                .child("postagens-curtidas")
+                .child(feed.getId());
+        curtidasRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                int qtdCurtidas = 0;
+
+                if(dataSnapshot.hasChild("qtdCurtidas")){
+                    PostagemCurtida postagemCurtida = dataSnapshot.getValue(PostagemCurtida.class);
+                    qtdCurtidas = postagemCurtida.getQtdCurtidas();
+                }
+
+                if(dataSnapshot.hasChild(usuarioLogado.getId())){
+                    holder.likeButton.setLiked(true);
+                }else {
+                    holder.likeButton.setLiked(false);
+                }
+
+                final PostagemCurtida curtida = new PostagemCurtida();
+                curtida.setFeed(feed);
+                curtida.setUsuario(usuarioLogado);
+                curtida.setQtdCurtidas(qtdCurtidas);
+
+                holder.likeButton.setOnLikeListener(new OnLikeListener() {
+                    @Override
+                    public void liked(LikeButton likeButton) {
+                        curtida.salvar();
+                        holder.qtdCurtidas.setText(curtida.getQtdCurtidas() + " curtidas");
+                    }
+
+                    @Override
+                    public void unLiked(LikeButton likeButton) {
+                        curtida.remover();
+                        holder.qtdCurtidas.setText(curtida.getQtdCurtidas() + " curtidas");
+                    }
+                });
+
+                holder.qtdCurtidas.setText(curtida.getQtdCurtidas() + " curtidas");
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
 
     }
 
