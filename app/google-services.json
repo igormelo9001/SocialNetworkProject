@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "850729705371",
-    "firebase_url": "https://socialnetwork-fc33f.firebaseio.com",
-    "project_id": "socialnetwork-fc33f",
-    "storage_bucket": "socialnetwork-fc33f.appspot.com"
+    "project_number": "1024359517989",
+    "firebase_url": "https://instragado-e8093.firebaseio.com",
+    "project_id": "instragado-e8093",
+    "storage_bucket": "instragado-e8093.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:850729705371:android:e62c0ffb551c8e20",
+        "mobilesdk_app_id": "1:1024359517989:android:de066b612a0a68a6",
         "android_client_info": {
-          "package_name": "com.igor.socialnetwork.project"
+          "package_name": "com.igor.socialnetwork.app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "850729705371-e6d93ctgdvk9jis77pf3o7hk1prfn9b9.apps.googleusercontent.com",
+          "client_id": "1024359517989-5qovl92bhd09joq60g5u37rbbc2j2u2r.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCatY8tFycPYMiw8IpiOsG5i4hxp5njGIY"
+          "current_key": "AIzaSyCePMjNGCVxgzhuhi3Hx4vgWFfj_NZhR6U"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "850729705371-e6d93ctgdvk9jis77pf3o7hk1prfn9b9.apps.googleusercontent.com",
+              "client_id": "1024359517989-5qovl92bhd09joq60g5u37rbbc2j2u2r.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

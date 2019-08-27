@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../SocialNetworkProject.iml" filepath="$PROJECT_DIR$/../SocialNetworkProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SocialNetworkProject-app.iml" filepath="$PROJECT_DIR$/SocialNetworkProject-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../newSocial-SocialNetworkProject.iml" filepath="$PROJECT_DIR$/../newSocial-SocialNetworkProject.iml" />
     </modules>
   </component>
 </project>

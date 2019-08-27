@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/background_degrade"
-    tools:context="com.igor.socialnetwork.project.activity.LoginActivity">
+    tools:context="com.igor.socialnetwork.app.activity.LoginActivity">
 
     <ImageView
         android:id="@+id/logo"
