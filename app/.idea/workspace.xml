@@ -14,9 +14,45 @@
     <list default="true" id="85cf97bc-e2f7-43a6-9d8a-ac900a5016b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/CadastroActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/activity/CadastroActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/ComentariosActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/activity/ComentariosActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/EditarPerfilActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/activity/EditarPerfilActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/FiltroActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/activity/FiltroActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/activity/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/activity/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/PerfilAmigoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/activity/PerfilAmigoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/VisualizarPostagemActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/activity/VisualizarPostagemActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/adapter/AdapterComentario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/adapter/AdapterComentario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/adapter/AdapterFeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/adapter/AdapterFeed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/adapter/AdapterGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/adapter/AdapterGrid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/adapter/AdapterMiniaturas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/adapter/AdapterMiniaturas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/adapter/AdapterPesquisa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/adapter/AdapterPesquisa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/fragment/FeedFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/fragment/FeedFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/fragment/PerfilFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/fragment/PerfilFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/fragment/PesquisaFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/fragment/PesquisaFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/fragment/PostagemFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/fragment/PostagemFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/helper/ConfiguracaoFirebase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/helper/ConfiguracaoFirebase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/helper/Permissao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/helper/Permissao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/helper/RecyclerItemClickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/helper/RecyclerItemClickListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/helper/SquareImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/helper/SquareImageView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/helper/UsuarioFirebase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/helper/UsuarioFirebase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/model/Comentario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/model/Comentario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/model/Feed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/model/Feed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/model/Postagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/model/Postagem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/model/PostagemCurtida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/model/PostagemCurtida.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/igor/instragado/app/model/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_editar_perfil.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_editar_perfil.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_perfil_amigo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_perfil_amigo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_perfil.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_perfil.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_pesquisa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_pesquisa.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_postagem.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_postagem.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/grid_postagem.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/grid_postagem.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,54 +78,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="323">
               <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-              <folding>
-                <element signature="e#967#985#0" expanded="true" />
-              </folding>
             </state>
           </provider>
-          <provider editor-type-id="android-manifest" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/MainActivity.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/activity/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
+            <state relative-caret-position="255">
               <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/LoginActivity.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/activity/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+              <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_login.xml">
-          <provider editor-type-id="text-editor" />
           <provider selected="true" editor-type-id="android-designer2" />
+          <provider editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/CadastroActivity.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/activity/CadastroActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
               <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
@@ -99,13 +132,22 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_cadastro.xml">
-          <provider editor-type-id="text-editor" />
           <provider selected="true" editor-type-id="android-designer2" />
+          <provider editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../build.gradle">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -182,11 +224,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/activity/ComentariosActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/model/Usuario.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/project/fragment/PerfilFragment.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -198,13 +240,10 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
-      <hideEmptyPackages AndroidView="false" />
+      <hideEmptyPackages AndroidView="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -215,52 +254,35 @@
             <path>
               <item name="SocialNetworkProject" type="1abcf292:AndroidViewProjectNode" />
               <item name="SocialNetworkProject-app" type="feadf853:AndroidModuleNode" />
-              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
-            </path>
-            <path>
-              <item name="SocialNetworkProject" type="1abcf292:AndroidViewProjectNode" />
-              <item name="SocialNetworkProject-app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
               <item name="SocialNetworkProject" type="1abcf292:AndroidViewProjectNode" />
               <item name="SocialNetworkProject-app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="app" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
             <path>
               <item name="SocialNetworkProject" type="1abcf292:AndroidViewProjectNode" />
-              <item name="SocialNetworkProject-app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="igor" type="462c0819:PsiDirectoryNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SocialNetworkProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocialNetworkProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="SocialNetworkProject" type="1abcf292:AndroidViewProjectNode" />
-              <item name="SocialNetworkProject-app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="igor" type="462c0819:PsiDirectoryNode" />
-              <item name="socialnetwork" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SocialNetworkProject" type="1abcf292:AndroidViewProjectNode" />
-              <item name="SocialNetworkProject-app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="igor" type="462c0819:PsiDirectoryNode" />
-              <item name="socialnetwork" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SocialNetworkProject" type="1abcf292:AndroidViewProjectNode" />
-              <item name="SocialNetworkProject-app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="igor" type="462c0819:PsiDirectoryNode" />
-              <item name="socialnetwork" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="activity" type="462c0819:PsiDirectoryNode" />
+              <item name="SocialNetworkProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocialNetworkProject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -434,9 +456,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25567323" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22995462" />
       <window_info id="Structure" order="1" side_tool="true" />
       <window_info id="Captures" order="2" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -445,14 +466,14 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" weight="0.32980332" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" order="0" visible="true" weight="0.22258593" />
+      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.49848714" weight="0.30605564" />
       <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49924356" weight="0.3453355" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.30278233" />
       <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5015129" side_tool="true" weight="0.17512275" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5015129" side_tool="true" weight="0.36824876" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49848714" weight="0.25531915" />
+      <window_info active="true" anchor="bottom" id="Build" order="7" sideWeight="0.49848714" visible="true" weight="0.46153846" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.3289689" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
@@ -467,7 +488,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/MainActivity.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/activity/MainActivity.java</url>
           <line>72</line>
           <properties />
           <option name="timeStamp" value="14" />
@@ -476,7 +497,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/fragment/PesquisaFragment.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/fragment/PesquisaFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
@@ -491,16 +512,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/adapter_filtros.xml">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_filtro.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3422d10250347c7706d573832cad65e9/jars/classes.jar!/com/google/android/material/bottomnavigation/BottomNavigationView.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -521,41 +542,41 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/adapter_feed.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="57" column="48" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_visualizar_postagem.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_pesquisa.xml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/bottom_navigation.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/fragment/PostagemFragment.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/fragment/PostagemFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="55" column="71" selection-start-line="55" selection-start-column="71" selection-end-line="55" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/VisualizarPostagemActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/activity/VisualizarPostagemActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="97" column="73" selection-start-line="97" selection-start-column="73" selection-end-line="97" selection-end-column="73" />
@@ -566,10 +587,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/carregamento.xml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/model/Postagem.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/model/Postagem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
@@ -577,12 +598,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_editar_perfil.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="39" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="39" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/local.properties">
       <provider selected="true" editor-type-id="text-editor" />
@@ -590,7 +611,7 @@
     <entry file="file://$PROJECT_DIR$/proguard-rules.pro">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/model/PostagemCurtida.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/model/PostagemCurtida.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
           <caret line="73" column="23" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
@@ -602,7 +623,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/FiltroActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/activity/FiltroActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="66" column="31" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="31" />
@@ -631,22 +652,22 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragment_feed.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_comentarios.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="799">
           <caret line="47" column="65" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/model/Feed.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/model/Feed.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
@@ -675,14 +696,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/divisor.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/ComentariosActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/activity/ComentariosActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="101" column="72" selection-start-line="101" selection-start-column="72" selection-end-line="101" selection-end-column="72" />
@@ -692,7 +713,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/PerfilAmigoActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/activity/PerfilAmigoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="304" column="29" selection-start-line="304" selection-start-column="29" selection-end-line="304" selection-end-column="29" />
@@ -702,7 +723,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/adapter/AdapterComentario.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/adapter/AdapterComentario.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
           <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
@@ -715,22 +736,22 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/adapter_comentario.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/adapter_pesquisa_usuario.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="35" column="39" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="39" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/adapter/AdapterFeed.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/adapter/AdapterFeed.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="49" column="55" selection-start-line="48" selection-start-column="7" selection-end-line="49" selection-end-column="55" />
@@ -740,7 +761,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/model/Comentario.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/model/Comentario.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
@@ -753,24 +774,24 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/menu/bottom_navigation.xml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/helper/UsuarioFirebase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/helper/UsuarioFirebase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
           <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/model/Usuario.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/model/Usuario.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="78" column="43" selection-start-line="78" selection-start-column="43" selection-end-line="78" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/fragment/FeedFragment.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/fragment/FeedFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
           <caret line="57" column="53" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
@@ -780,31 +801,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/fragment/PerfilFragment.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/fragment/PerfilFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="225" selection-start-line="225" selection-end-line="225" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/EditarPerfilActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/activity/EditarPerfilActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="59" column="54" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/generated/source/buildConfig/debug/com/igor/socialnetwork/app/BuildConfig.java">
+    <entry file="file://$PROJECT_DIR$/build/generated/source/buildConfig/debug/com/igor/instragado/app/BuildConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -815,9 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../build.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c99e6352413ba50f4065b703bf499c15/res/values/values.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -825,32 +836,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="323">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/activity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
           <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/LoginActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/activity/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_login.xml">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/socialnetwork/app/activity/CadastroActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/igor/instragado/app/activity/CadastroActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
@@ -858,19 +877,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_cadastro.xml">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/../build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding>
-            <element signature="e#967#985#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
     </entry>
   </component>
 </project>

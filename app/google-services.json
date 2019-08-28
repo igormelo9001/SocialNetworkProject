@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1024359517989:android:de066b612a0a68a6",
+        "mobilesdk_app_id": "1:1024359517989:android:19ea6047b38ecb6d",
         "android_client_info": {
-          "package_name": "com.igor.socialnetwork.app"
+          "package_name": "com.igor.instragado.app"
         }
       },
       "oauth_client": [

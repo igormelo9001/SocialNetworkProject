@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/cinza_medio">
 
-    <com.igor.socialnetwork.app.helper.SquareImageView
+    <com.igor.instragado.app.helper.SquareImageView
         android:id="@+id/imageGridPefil"
         android:layout_width="0dp"
         android:layout_height="200dp"

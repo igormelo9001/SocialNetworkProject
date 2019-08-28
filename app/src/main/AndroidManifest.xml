@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.igor.socialnetwork.app">
+    package="com.igor.instragado.app">
 
     <uses-feature
         android:name="android.hardware.camera2"
@@ -27,17 +27,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.igor.socialnetwork.app.activity.ComentariosActivity"></activity>
-        <activity android:name="com.igor.socialnetwork.app.activity.VisualizarPostagemActivity" />
-        <activity android:name="com.igor.socialnetwork.app.activity.FiltroActivity" />
-        <activity android:name="com.igor.socialnetwork.app.activity.PerfilAmigoActivity" />
+        <activity android:name="com.igor.instragado.app.activity.ComentariosActivity"></activity>
+        <activity android:name="com.igor.instragado.app.activity.VisualizarPostagemActivity" />
+        <activity android:name="com.igor.instragado.app.activity.FiltroActivity" />
+        <activity android:name="com.igor.instragado.app.activity.PerfilAmigoActivity" />
         <activity
-            android:name="com.igor.socialnetwork.app.activity.EditarPerfilActivity"
-            android:parentActivityName="com.igor.socialnetwork.app.activity.EditarPerfilActivity" />
-        <activity android:name="com.igor.socialnetwork.app.activity.CadastroActivity" />
-        <activity android:name="com.igor.socialnetwork.app.activity.MainActivity" />
+            android:name="com.igor.instragado.app.activity.EditarPerfilActivity"
+            android:parentActivityName="com.igor.instragado.app.activity.EditarPerfilActivity" />
+        <activity android:name="com.igor.instragado.app.activity.CadastroActivity" />
+        <activity android:name="com.igor.instragado.app.activity.MainActivity" />
         <activity
-            android:name="com.igor.socialnetwork.app.activity.LoginActivity"
+            android:name="com.igor.instragado.app.activity.LoginActivity"
             android:theme="@style/AppLoginTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
