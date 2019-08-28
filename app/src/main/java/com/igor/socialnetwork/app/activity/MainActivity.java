@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbarPrincipal);
         setSupportActionBar(toolbar);
-        toolbar.setTitle("Social Network");
+        toolbar.setTitle("Instragado");
 
         autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
 
